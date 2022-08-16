@@ -1,21 +1,20 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-
 import './App.css';
+
+import Home from './pages/Home';
+import MyAccount from './pages/MyAccount';
+import Header from './components/Header';
 
 const App = () => {
     return (
-        <div>
-            App
+        <div className='app-container'>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/my-account" element={<MyAccount />} />
+            </Routes>
         </div>
-        // <Box width="400px" sx={{ width: { xl: '1488px' }}} m="auto">
-        //     <Navbar />
-        //     <Routes>
-        //         <Route path="/" element={<Home />} />
-        //         <Route path="/exercise/:id" element={<ExerciseDetail />} />
-        //     </Routes>
-        //     <Footer />
-        // </Box>
     )
 }
 
