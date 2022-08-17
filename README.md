@@ -1,7 +1,11 @@
 # todo
-    1. upload to github
+    1. [done]upload to github
     2. [feature] top navigation bar
-    3. [feature] search stock
+        2.1 [done][feature] search stock
+            enter text -> click search -> fetch api -> console.log(result)
+            处理 result -> 展示
+
+
 
 # 遇到的问题
 问题：antDesign 样式不生效
