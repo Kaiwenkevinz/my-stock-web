@@ -5,7 +5,7 @@ import { useState } from 'react';
 import './App.css';
 
 import Home from './pages/Home';
-import MyAccount from './pages/MyAccount';
+import Portfolio from './pages/Portfolio';
 import Header from './components/Header';
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
             } />
             <Routes>
                 <Route path="/" element={<Home stockInfo = {searchResult} />} />
-                <Route path="/my-account" element={<MyAccount />} />
+                <Route path="/portfolio" element={<Portfolio />} />
             </Routes>
         </div>
     )
